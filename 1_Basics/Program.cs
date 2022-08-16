@@ -1,4 +1,4 @@
-﻿#region 
+﻿/* #region 
 //The "#region" can be used to 'collapse' areas of code so you can focus on the key areas
 //Comments can be done in a couple different ways, after // and multiline between /* comment */
 /*
@@ -9,7 +9,9 @@ comment
 
 //All of these functionalities is for the programmers, the compiler deletes them when creating the executable (.exe)
 //Programmers can use them to document their code and help future programmers understand their thinking.
-#endregion
+/* #endregion
+
+/*
 
 #region Assignment; Write your own story
 /* Todays assignment
@@ -28,8 +30,8 @@ comment
 //int ExampleInt = 123;
 //float ExampleFloat = 123.21f;
 //string ExampleString = "Example 123";
-#endregion
-
+/* #endregion
+/*
 #region Variables
 Console.WriteLine("What is your name?");
 
@@ -59,11 +61,15 @@ Console.WriteLine("Do you want to learn about the simplest data types?");
 * There are many different data types which can be explored in the Microsoft C# documentation, see link below.
 * https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types
 */
-
+/*
 string answer = Console.ReadLine();
 
 bool LearnAboutDataTypes = false;
 if(answer == "yes"){
+    LearnAboutDataTypes = true;
+}
+
+if(answer == "Yes"){
     LearnAboutDataTypes = true;
 }
 
@@ -119,3 +125,29 @@ int.Parse()
 Convert.ToInt32()
 (int)
 */
+
+Console.WriteLine("Hello, welcome to Brandon Currington Cuts Barber Shop. My name is Brandon Currington, let's get you cut.");
+
+string answer = Console.ReadLine();
+bool BrandonYes = false; 
+
+
+   
+
+if (answer == "Sure") {
+     BrandonYes = true;
+
+}
+
+if (BrandonYes == true) {
+    Console.WriteLine("Alright, for sure. Do you want the Brandon Currington Special Cut?");
+    Console.ReadLine();
+}
+
+else { 
+    Console.WriteLine("I'm dissapointed thug.");
+    Console.ReadLine();
+}
+
+
+    
